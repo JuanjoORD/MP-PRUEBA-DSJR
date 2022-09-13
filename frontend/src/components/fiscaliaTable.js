@@ -21,6 +21,7 @@ function App(props) {
           <Grid item xs={4} key={fiscalia.id}>
             <Card sx={{ maxWidth: 345 }}>
               <div style={{ position: "relative" }}>
+                <a href={`https://www.google.com/maps/search/?api=1&query=${fiscalia.latitude},${fiscalia.longitude}`} target="_blank" >
                 <CardMedia
                   component="img"
                   alt="Maps"
@@ -41,6 +42,7 @@ function App(props) {
                   {" "}
                   Click para ver en Maps
                 </div>
+                </a>
               </div>
 
               <CardContent>
